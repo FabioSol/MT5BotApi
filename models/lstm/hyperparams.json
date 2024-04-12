@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "execution_date": "2024-04-08T06:31:48.861893",
+        "symbol": "EURUSD",
+        "timeframe": "M5",
+        "data_start": "2024-03-24T18:00:00",
+        "data_end": "2024-04-07T23:10:00",
+        "result": 0.0007523218978163491
+    },
+    "pipeline_params": {
+        "x": {
+            "window_1": 6,
+            "window_2": 25,
+            "window_3": 58,
+            "window_b": 14,
+            "window_dev": 2.0605994082766053
+        },
+        "ts": {
+            "window": 59
+        }
+    },
+    "hyperparams": {
+        "input_shape": [
+            59,
+            6
+        ],
+        "units": [
+            32,
+            512
+        ],
+        "activations": [
+            "linear",
+            "linear"
+        ]
+    }
+}
