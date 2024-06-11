@@ -30,6 +30,7 @@ class Feeder:
             quit()
         self.mt5 = mt5
         self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+        mt5.initialize()
 
     def fast_feed_ticks_range(self, symbol, date_from: datetime = datetime.now() - timedelta(days=5),
                               date_to: datetime = datetime.now()):
@@ -141,7 +142,7 @@ class Feeder:
 
 def main():
     f = Feeder()
-    f.run()
+    f.update_all("EURUSD",False)
 
 
 if __name__ == "__main__":

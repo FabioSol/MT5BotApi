@@ -9,9 +9,6 @@ import MetaTrader5 as mt5
 mt5.initialize()
 
 
-
-
-
 def main():
     executed = False
     while True:
